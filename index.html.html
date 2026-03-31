@@ -1,0 +1,264 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A message for you</title><style>
+
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background: radial-gradient(circle at center, #6b0000 0%, #2a0000 60%, #000000 100%);
+    color: #f5e6d3;
+    overflow-x: hidden;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* INTRO */
+
+.intro {
+    opacity: 0;
+    animation: fadeInIntro 5s forwards;
+}
+
+@keyframes fadeInIntro {
+    to {
+        opacity: 1;
+    }
+}
+
+.subtitle {
+    font-size: 14px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+    opacity: 0.85;
+}
+
+.main-name {
+    font-size: 64px;
+    letter-spacing: 3px;
+    margin: 0;
+}
+
+.scroll-text {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.scroll-indicator {
+    margin-top: 40px;
+    font-size: 14px;
+    letter-spacing: 3px;
+    opacity: 0;
+    animation: showScroll 1s forwards;
+    animation-delay: 5s;
+}
+
+@keyframes showScroll {
+    to {
+        opacity: 1;
+    }
+}
+
+/* LOVE NOTE */
+
+.love-note {
+  max-width: 720px;
+  padding: 60px 50px;
+  background: linear-gradient(180deg, rgba(120,0,0,0.9), rgba(40,0,0,0.95));
+  border-radius: 14px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.7);
+  position: relative;
+  line-height: 1.9;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1.2s ease;
+}
+
+.love-note.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.love-note::before,
+.love-note::after {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border: 2px solid rgba(255,255,255,0.4);
+}
+
+.love-note::before {
+  top: 18px;
+  left: 18px;
+  border-right: none;
+  border-bottom: none;
+}
+
+.love-note::after {
+  bottom: 18px;
+  right: 18px;
+  border-left: none;
+  border-top: none;
+}
+
+.note-date {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  opacity: 0.8;
+}
+
+.note-title {
+  font-size: 28px;
+  margin-bottom: 25px;
+  text-align: left;
+  font-weight: bold;
+}
+
+/* FINAL SECTION */
+
+.final-question {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.final-sub {
+    font-size: 16px;
+    margin-bottom: 25px;
+    opacity: 0.9;
+}
+
+.heart {
+    font-size: 70px;
+    margin: 20px 0 30px 0;
+    animation: pulse 1.4s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.buttons {
+    position: relative;
+    height: 120px;
+}
+
+button {
+    padding: 14px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.yes-btn {
+    background: linear-gradient(180deg, #ff4d4d, #b30000);
+    color: white;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+.no-btn {
+    background: #555;
+    color: white;
+    position: absolute;
+}
+
+</style></head><body><!-- INTRO --><section class="intro">
+  <p class="subtitle">A MESSAGE, JUST FOR YOU</p>
+  <h1 class="main-name">Maria Ellaine</h1>
+  <p class="scroll-text">This page was made with love — scroll down 🌹</p>
+  <div class="scroll-indicator">SCROLL ↓</div>
+</section><!-- LETTER --><section><div class="love-note" id="note"><div class="note-date">March 31</div>
+<h2 class="note-title">My dearest Maria Ellaine,</h2><p>
+I am writing this message with a heavy heart, but also with honesty.
+There are so many things I want to say to you, and I hope you can feel
+that every word here comes from a real place inside me.
+</p><p>
+First, I want to say that I am truly sorry.
+Not just a simple sorry, but a deep and sincere one.
+I am sorry for the times I hurt you,
+for the times I made you feel pain,
+and for the mistakes I made that caused distance between us.
+</p><p>
+You were never just someone in my life.
+You became someone very special to me.
+You became my comfort, my happiness,
+and the person I looked forward to talking to every single day.
+</p><p>
+I miss the simple moments we shared.
+The laughs, the conversations, the small things
+that made ordinary days feel better.
+Those memories are still in my heart.
+</p><p>
+I want you to know how much I loved you.
+Not in a perfect way, because I am not a perfect person,
+but in a real way — with true feelings,
+with care, and with sincerity.
+My love for you was never fake.
+</p><p>
+I am trying to grow now.
+I am learning from what happened.
+I am thinking about my actions,
+and the kind of person I want to become.
+I want to be better.
+</p><p>
+Whether or not things go back to the way they were,
+I will always be thankful that you became part of my life.
+You will always have a special place in my heart.
+</p></div></section><!-- FINAL --><section><h1 class="final-question">Will you forgive me?</h1>
+<p class="final-sub">Because this heart still cares about you.</p><div class="heart">❤️</div><div class="buttons"><button class="yes-btn" onclick="sayYes()">
+Yes
+</button><button class="no-btn" id="noBtn">
+No
+</button></div><p id="responseText"></p></section><script>
+
+// Fade in love note on scroll
+const note = document.getElementById('note');
+
+function showOnScroll() {
+  const rect = note.getBoundingClientRect();
+  if (rect.top < window.innerHeight - 100) {
+    note.classList.add('show');
+  }
+}
+
+window.addEventListener('scroll', showOnScroll);
+
+// Moving NO button
+
+const noBtn = document.getElementById("noBtn");
+
+noBtn.addEventListener("mouseover", () => {
+
+    const x = Math.random() * 300;
+    const y = Math.random() * 200;
+
+    noBtn.style.left = x + "px";
+    noBtn.style.top = y + "px";
+
+});
+
+function sayYes() {
+
+    document.getElementById("responseText").innerHTML =
+    "Thank you for giving me another chance. I promise to be better.";
+
+}
+
+</script></body>
+</html>
